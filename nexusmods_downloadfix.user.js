@@ -69,7 +69,7 @@ function DownloadFile(href, button)
                 data: "",
                 success: function (response) {
                     var prem = false
-                    var match = response.match(/data-download-url="(.*)"/)
+                    var match = response.match(/downloadUrl = '(.*)'/)
                     // Premium
                     if (!match) {
                       match = response.match(/id="dl_link" value="(.*)"/)
